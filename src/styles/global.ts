@@ -13,12 +13,12 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body{
-        font: 400 1rem/130% 'Roboto', sans-serif;
+        font: 400 1rem/1.6 'Roboto', sans-serif;
         background: ${props => props.theme["background"]};
         color: ${props => props.theme["base-text"]};
     }
 
     header{
-        font: 700 1.125rem/130% 'Baloo 2', cursive;
+        font: 700 1.125rem/1.6 'Baloo 2', cursive;
     }
 `
