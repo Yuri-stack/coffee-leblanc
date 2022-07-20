@@ -1,4 +1,4 @@
-import { MapPin, ShoppingCart } from 'phosphor-react'
+import { MapPin, ShoppingCart, SunDim } from 'phosphor-react'
 
 import { ActionsContainer, HeaderContainer, ActionsContentLocation, ActionsContentCart } from "./styles";
 
@@ -17,6 +17,10 @@ export function Header() {
 
                 <ActionsContentCart>
                     <ShoppingCart size={22} weight="fill"/>
+                </ActionsContentCart>
+
+                <ActionsContentCart>
+                    <SunDim size={22} weight="duotone" />
                 </ActionsContentCart>
 
             </ActionsContainer>
