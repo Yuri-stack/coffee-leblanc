@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const BannerContainer = styled.section`
     height: 26rem;
 
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
 `
@@ -18,7 +18,7 @@ export const TitleContainer = styled.section`
     flex-direction: column;
     gap: 1rem;
 
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
 
     h1{
         font: 800 2.5rem/2.75rem 'Baloo 2', cursive;
@@ -31,18 +31,17 @@ export const TitleContainer = styled.section`
 `
 
 export const InfoContainer = styled.section`
-    width: 31.25rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 `
 
-export const InfoItem = styled.section`
+export const InfoItem = styled.div`
     display: flex;
     align-items: center;
 
     width: 20rem;
     gap: 1rem;
-
-    margin-bottom: 1.5rem;
 
     p{
         font-family: 'Roboto', sans-serif;

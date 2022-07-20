@@ -26,9 +26,7 @@ export function Banner() {
                     </div>
                     <p>Entrega rápida e rastreada.</p>
                 </InfoItem>
-            </InfoContainer>
 
-            <InfoContainer>
                 <InfoItem>
                     <div>
                         <Package size={22} weight="fill"/>
