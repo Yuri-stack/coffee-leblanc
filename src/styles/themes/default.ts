@@ -1,5 +1,5 @@
 export const defaultTheme = {
-    'yellow-light': '#F2E852',
+    'yellow-light': '#F1E9C9',
     'yellow-dark':'#C47F17',
 
     'red-light':'#d84141',
@@ -14,11 +14,11 @@ export const defaultTheme = {
     // 'base-button':'#E6E5E5',
     // 'base-input':'#EDEDED',
     // 'base-card':'#F3F2F2',
-
+    
     // 'background':'#FAFAFA',
     // 'white':'#FFFFFF',
-
-    // 'base-title':'#272221',
+    
+    'base-card':'#272221',
     'base-text':'#E6E5E5',
 
     'background':'#0d1117' 

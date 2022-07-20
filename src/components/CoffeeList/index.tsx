@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react"
+import { ShoppingCart } from "phosphor-react"
 import { api } from "../../services/api"
+
+import { ActionsContentCart, CoffeeListContainer, CoffeeListContent } from "./styles"
 
 interface Coffee {
     id: number
@@ -23,22 +26,30 @@ export function CoffeeList() {
     }, [])
 
     return (
-        <>
+        <CoffeeListContainer>
             <h1>Nossos Cafés</h1>
 
-            <div>
+            <CoffeeListContent>
                 {list.map(item => (
                     <li key={item.id}>
                         <img src={item.image} alt={item.name} />
-                        { item.tags.map(tag => (
-                            <span key={tag}>{tag} - </span>
-                        ))}
+                        <div>
+                            { item.tags.map(tag => (
+                                <span key={tag}>{tag}</span>
+                            ))}
+                        </div>
                         <strong>{item.name}</strong>
                         <p>{item.description}</p>
-                        <span>{item.price}</span>
+                        <span>
+                            R$<strong>{item.price}</strong>
+
+                            <ActionsContentCart>
+                                <ShoppingCart size={22} weight="fill"/>
+                            </ActionsContentCart>
+                        </span>
                     </li>
                 ))}
-            </div>
-        </>
+            </CoffeeListContent>
+        </CoffeeListContainer>
     )
 }
