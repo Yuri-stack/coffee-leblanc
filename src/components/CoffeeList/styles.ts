@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { BasicActionsContent } from '../Navbar/styles'
 
 export const CoffeeListContainer = styled.section`
     display: flex;
@@ -31,7 +30,7 @@ export const CoffeeListContent = styled.ul`
             margin-top: -1.25rem;
         }
 
-        div{
+        >div{
             display: flex;
             align-items: center;
             justify-content: center;
@@ -41,6 +40,7 @@ export const CoffeeListContent = styled.ul`
                 text-transform: uppercase;
                 font-size: .75rem;
                 font-weight: bold;
+                line-height: 1;
 
                 background: ${props => props.theme['yellow-light']};
                 color: ${props => props.theme['yellow-dark']};
@@ -66,14 +66,60 @@ export const CoffeeListContent = styled.ul`
             display: flex;
             align-items: center;
             gap: .5rem;
+
+            div:nth-child(3){
+                display: flex;
+                align-items: center;
+
+                padding: .5rem;
+                gap: .25rem;
+
+                border-radius: 6px;
+                background: ${props => props.theme['yellow-light']};
+
+                svg {
+                    color: ${props => props.theme['yellow-dark']};
+                }
+            }
         }
     }
 `
 
-export const ActionsContentCart = styled(BasicActionsContent)`
-    background: ${props => props.theme["red"]};
+export const ActionsContentCart = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    &:hover {
-        background: ${props => props.theme["red-light"]};
+    margin-left: 3.5rem;
+
+    border-radius: 5px;
+    /* border: 1px solid ${props => props.theme['yellow-light']}; */
+    /* background: ${props => props.theme['yellow-light']}; */
+
+    input {
+        width: 2rem;
+        padding: .5rem 0;
+
+        text-align: center;
+        border: none;
+        
+        font-size: 1rem;
+        font-weight: bold;
+        color: ${props => props.theme['base-text']};
+        background: none;
+    }
+
+    button{
+        background: none;
+        border: 0;
+        padding: 6px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            color: ${props => props.theme['yellow-dark']};
+        }
     }
 `

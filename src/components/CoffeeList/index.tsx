@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { ShoppingCart } from "phosphor-react"
+import { Minus, Plus, ShoppingCart } from "phosphor-react"
 import { api } from "../../services/api"
 
 import { ActionsContentCart, CoffeeListContainer, CoffeeListContent } from "./styles"
@@ -11,13 +11,14 @@ interface Coffee {
     tags: Array<string>
     price: string
     image: string
+    amount: number
 }
 
 export function CoffeeList() {
     const [list, setList] = useState<Coffee[]>([])
 
     useEffect(() => {
-        async function loadProducts(){
+        async function loadProducts() {
             const response = await api.get<Coffee[]>('products')
             setList(response.data)
         }
@@ -34,18 +35,43 @@ export function CoffeeList() {
                     <li key={item.id}>
                         <img src={item.image} alt={item.name} />
                         <div>
-                            { item.tags.map(tag => (
+                            {item.tags.map(tag => (
                                 <span key={tag}>{tag}</span>
                             ))}
                         </div>
                         <strong>{item.name}</strong>
                         <p>{item.description}</p>
+                        
                         <span>
-                            R$<strong>{item.price}</strong>
+                            <strong>{item.price}</strong>
 
                             <ActionsContentCart>
-                                <ShoppingCart size={22} weight="fill"/>
+                                <button type="button"
+                                    data-coffeeaction="increment-coffee"
+                                    disabled={item.amount <= 1}
+                                >
+                                    <Plus size={22} weight="bold" />
+                                </button>
+
+                                <input
+                                    type="text"
+                                    data-coffeeaction="product-amount"
+                                    readOnly
+                                    value={item.amount}
+                                />
+
+                                <button type="button"
+                                    data-coffeeaction="decrement-coffee"
+                                >
+                                    <Minus size={22} weight="bold" />
+                                </button>
+
                             </ActionsContentCart>
+
+                            <div>
+                                <ShoppingCart size={22} weight="fill" />
+                            </div>
+
                         </span>
                     </li>
                 ))}
