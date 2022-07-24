@@ -32,7 +32,7 @@
 <div>
     <p align="center">
     <em>
-        Coffee Leblanc é um projeto/desafio de Entregas de Café desenvolvido pela Rocketseat. Utilizei como tema a Cafeteria Leblanc do jogo Persona 5. Feito isso, aproveite e "Take your Heart!" digo "Take your Coffee!"
+        Coffee Leblanc is a project/challenge developed for Rocketseat. I used like theme the coffee shop Leblanc of Persona 5´s game. Done that, enjoy and "Take your Heart", i mean... "Take your Coffee"!
     </em>
     </p>
 </div>
