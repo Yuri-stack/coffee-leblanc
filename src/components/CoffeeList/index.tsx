@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { Minus, Plus, ShoppingCart } from "phosphor-react"
 import { api } from "../../services/api"
 
+import { BasicActionsButton } from "../Navbar/styles"
 import { ActionsContentCart, CoffeeListContainer, CoffeeListContent } from "./styles"
 
 interface Coffee {
@@ -41,7 +42,7 @@ export function CoffeeList() {
                         </div>
                         <strong>{item.name}</strong>
                         <p>{item.description}</p>
-                        
+
                         <span>
                             <strong>{item.price}</strong>
 
@@ -68,9 +69,12 @@ export function CoffeeList() {
 
                             </ActionsContentCart>
 
-                            <div>
+                            <BasicActionsButton
+                                bg_color='yellow_light'
+                                txt_color='yellow_dark'
+                            >
                                 <ShoppingCart size={22} weight="fill" />
-                            </div>
+                            </BasicActionsButton>
 
                         </span>
                     </li>

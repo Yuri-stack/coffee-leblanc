@@ -67,7 +67,7 @@ export const CoffeeListContent = styled.ul`
             align-items: center;
             gap: .5rem;
 
-            div:nth-child(3){
+            /* div:nth-child(3){
                 display: flex;
                 align-items: center;
 
@@ -80,7 +80,7 @@ export const CoffeeListContent = styled.ul`
                 svg {
                     color: ${props => props.theme['yellow-dark']};
                 }
-            }
+            } */
         }
     }
 `
@@ -117,6 +117,10 @@ export const ActionsContentCart = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+
+        :focus{
+            box-shadow: 0 0 0 2px ${props => props.theme["yellow-dark"]};
+        }
 
         svg {
             color: ${props => props.theme['yellow-dark']};

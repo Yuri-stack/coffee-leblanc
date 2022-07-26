@@ -1,6 +1,6 @@
 import { MapPin, ShoppingCart, SunDim } from 'phosphor-react'
 
-import { ActionsContainer, HeaderContainer, ActionsContentLocation, ActionsContentCart } from "./styles";
+import { ActionsContainer, HeaderContainer, ActionsContentLocation, BasicActionsButton } from "./styles";
 
 import logoCoffee from '../../assets/logo-coffee-delivery.svg'
 
@@ -15,13 +15,21 @@ export function Header() {
                     <p>São Paulo, SP</p>
                 </ActionsContentLocation>
 
-                <ActionsContentCart>
+                <BasicActionsButton 
+                    bg_color='red' 
+                    hover_color='red_light' 
+                    txt_color='base_text'
+                >
                     <ShoppingCart size={22} weight="fill"/>
-                </ActionsContentCart>
+                </BasicActionsButton>
 
-                <ActionsContentCart>
+                <BasicActionsButton 
+                    bg_color='red' 
+                    hover_color='red_light' 
+                    txt_color='base_text'
+                >
                     <SunDim size={22} weight="duotone" />
-                </ActionsContentCart>
+                </BasicActionsButton>
 
             </ActionsContainer>
         </HeaderContainer>
