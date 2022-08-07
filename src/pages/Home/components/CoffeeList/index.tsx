@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react"
 import { Minus, Plus, ShoppingCart } from "phosphor-react"
-import { api } from "../../services/api"
+import { api } from "../../../../services/api"
 
-import { BasicActionsButton } from "../Navbar/styles"
+import { BasicActionsButton } from "../../../../components/Navbar/styles"
 import { ActionsContentCart, CoffeeListContainer, CoffeeListContent } from "./styles"
+
+import imgReplace from '../../../../../public/coffe-img.svg'
 
 interface Coffee {
     id: number
@@ -34,7 +36,12 @@ export function CoffeeList() {
             <CoffeeListContent>
                 {list.map(item => (
                     <li key={item.id}>
-                        <img src={item.image} alt={item.name} />
+                        { 
+                            item.image ? 
+                                <img src={item.image} alt={item.name} /> 
+                            : 
+                                <img src={imgReplace} alt="Imagem de uma xícara de café" />
+                        }
                         <div>
                             {item.tags.map(tag => (
                                 <span key={tag}>{tag}</span>

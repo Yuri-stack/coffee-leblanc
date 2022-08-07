@@ -6,7 +6,7 @@
             "description": "O tradicional café feito com água quente e grãos moídos",
             "tags": ["Tradicional"],
             "price": 9.90,
-            "image": "https://s3-alpha-sig.figma.com/img/55b1/f9ee/64600f98b2bae456b96fdc624c4b4f47?Expires=1659312000&Signature=GZNyswVx2Ljtg4kDhG2r0h~sm3JPOjePMDqahi4w4cV1WJoh1dwzfZioVruU3CHpFHqmG0-gRz-vTqEjsTZwKG~Nlr13oC7OaXmwcZi3L9JE5NqrqgafB4thrK8NIL1Kpaotd5iOyIJkpPtztQtgIFo1lcgNy8btVblnwGG3DQUxCaVpXavdcX4jmuLdNfU3dePp2nx-ZIqG~clSx0JgIkK0u48b9hvCl9T-0GizUaMerEAS4VUh5rMAoYvXIsR620mV-uIJtLunfEf51FXrqEqALK5eOEI9-DcRoU56bBTYuUYaqpGF1f6a7nNvNV1ln9dkCPCIgoVlCa261oHLQw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+            "image": "coffe-img.svg",
             "amount":5
         },
         {
@@ -15,7 +15,7 @@
             "description": "Bebida preparada com café expresso e cubos de gelo",
             "tags": ["Tradicional", "Gelado"],
             "price": 9.90,
-            "image": "https://s3-alpha-sig.figma.com/img/f389/2f36/d263d0013831cd5b1fb27c6d2ac64353?Expires=1659312000&Signature=gx9Nb0aJte2tSInND2bl8Ur4ybsQgZR197t6dShttKWGihC5G~54XlRlVkf2lR64E35Bri0dqPCU-5IzLB6YQW17B3r2lWRp-Crkc5HD4BPX4lJlevrIVpnu-0WqFOBjvM23lLmMYGDergCae9F40vXg-cyuqGjr6dUH1q8E~y6sQAVZMK8vabaz2MzgRWUD8VtRteZFTFMdgwHt81AVXqnXfoVmTKzXpf8VwgO5VmNjMqaigSauqlcMEquGOyLDIqoPEJ3w599DQhCSJ8WnM9W6J1ZlwCusHXu6VJSrAQDkItYCyKskKnk7QCY2HvZd82coTmrVQpKTF19HKtFqiQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+            "image": "coffe-img.svg",
             "amount":5
         },
         {
@@ -24,7 +24,7 @@
             "description": "Bebida feita com chocolate dissolvido no leite quente e café",
             "tags": ["Especial", "Com Leite"],
             "price": 9.90,
-            "image": "https://s3-alpha-sig.figma.com/img/4462/16dc/20b9de473c3aadc304466df059e1887e?Expires=1659312000&Signature=EPOH6HlX6zz2QBvInuiNRLYuodm0Gf3OWgT4DCGoryrTVJ7sqmIPSJq-zASupeK7zg4lbbHMTcuU9liP6uATj0MNY9wkF87AZRGbPKQVm46SaTJEqW1qzm-eiYU1AGCifTTJw2enpOXk1HwTQ5tou0f~T91Fppk4rsS~pbq37G4z9nz8sn71Pvll5AQ9VPReYX-4KtR5z34ozj2WRG7Va4FMRK6b-AH-8rY05vRbPe4tWrpj4C9dWslk9xRIfB5ZYYfWiVoCjKMQaoMynTNWV7RdhPGrqm~NT9tH8EGplyjwxfzkVa3EevF9oSOV9HGYUKG~1TrMWD4yz22t1J6Imw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+            "image": "coffe-img.svg",
             "amount":5
         },
         {
@@ -33,7 +33,7 @@
             "description": "Bebida com canela feita de doses iguais de café, leite e espuma",
             "tags": ["Tradicional", "Com Leite"],
             "price": 9.90,
-            "image": "https://s3-alpha-sig.figma.com/img/6693/81b7/0a9565b6f322ac8b5229ee4fc4b47825?Expires=1659312000&Signature=YX1PkbEjaKvzIqSWUv7kPDn40bJ4siGJ1jingjOY0nEajW25AqSO-SUnxAWC2iO~-7bp-jOLZ9Nzl3Cpd9coCfZNjv356ybQJ4MCfd09y0ekm0vQmlGxVlPPlZwxHlOeH-3Esphb1FtPNurLnV1hf~2dRwDfNuOlBEcwY~L6phR66jT-M3RHSkf3k84b4UQMvDaGgEmSJt6MjU7LfvfMHfCpRL5vdjodHMsrqiAd4mdjvENgFMkOZN~xQQQe7a2Ze3Xf14GgRhjj7ullNaqdn80DsnKCR4ae6REI2fmbyEgy8nn~tyJMNQc7FPYG2zVYMiS4DZW2eWiGFD1lHT3IEg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+            "image": "coffe-img.svg",
             "amount":5
         },
         {
@@ -42,7 +42,7 @@
             "description": "Drink gelado de café expresso com rum, creme de leite e hortelã",
             "tags": ["Especial", "Alcoólico", "Gelado"],
             "price": 9.90,
-            "image": "https://s3-alpha-sig.figma.com/img/dae3/2866/45ab1873edeac1c90c31203f5bf3ed52?Expires=1659312000&Signature=L7mC6tdhBxuWnIodNpPnwK1YhPdDl8nAaglldXEH0ScfrvIJUtJ0H-43r2QcKJ93kLGaziqwVgVDGp0BeTiLZoj-M-wpTBlCTrOadXuqECacsB7q8xurL5zXQIIDJJFHP9~JAdKBM2webkkWe3nid0-2PkHbLM4Wmcq7PrMG9TID1ak7WPLApqQmkj47ZJBbRRHbfIuUKoeXqmVCym8slAQzgfnrW-XETii7-7hHITb2hNn94di-F8P3NWvImEhHaPRgXwbHw7fVW9YQJBGD1uSOruM-Y9y~4pHJfq9EaBoUrJSo9zeEsgSxNOcRw6wbbFReBc7mKQxVAc6wYn-QKg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+            "image": "coffe-img.svg",
             "amount":5
         },
         {
@@ -51,7 +51,7 @@
             "description": "Bebida adocicada preparada com café e leite de coco",
             "tags": ["Especial"],
             "price": 9.90,
-            "image": "https://s3-alpha-sig.figma.com/img/64fd/9a26/b6d3187556021c2da9fc80f2da41088f?Expires=1659312000&Signature=LPbiiQTc40075Z2CROP7CSvulJuOZpANZmqcENUlEnGI9uDL1TktirgPKgKrYbOIZbaug289vybbKXMB3kS7TIFzsaRuO5OZgYoWY0~IdALP60yQWDeBK1p29oTbB9pk1loKsPbd5jt~15SkwrIwKsKRW318YPK8t-L0-RWlpQhxtP9YQ7yhB7EFeGj5Wmz0LAGCO6A8vLl4ay-JIXCJFKy-892nrEpzBh-OlnKJz1dNfAf5RZMRlDFIKZU9~jl-VyoXR-avTpF6gbJ556Ozp3PX2aerEl3HS9UnX-fgymiRdOW8a1a34GUDBb6eLSeVyd8O4Eb2Yzr8nCLCke0DQA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+            "image": "coffe-img.svg",
             "amount":5
         },
         {
@@ -60,7 +60,7 @@
             "description": "Bebida a base de café, uísque irlandês, açúcar e chantilly",
             "tags": ["Especial", "Alcoólico"],
             "price": 9.90,
-            "image": "https://s3-alpha-sig.figma.com/img/53b9/9cd5/c0cac4ecf7b9bd81c976cdd9fe2ab3a3?Expires=1659312000&Signature=H~qET~yEZqdEq-~-MvZFT8AnyhXKmXa6xd-Wu89TYfShiAqcLegvILJDBd2M-q6eHj3PDf7CNaIz3x6CPPN-aGnmQXO3CM3zP6qRaguMTCRE5AyVvQbnW6S6NG6CcJCzHnhhfi2SJGcMwDtuOCU9gKL3RlrcyTT0OnttZpkqJCCtrdcdIOwii1JVVnrqzRp0ldxabffh8zwDkX4NNn2UELNinwsrbqE1bzqEgHeEO6aBPLdO~ChO7dNCtttRtqDiE5Hko819UM~IzkROZPTruvMSGkziaf39NuuE1KtIFjlHHST4JGfFcBSK0ADJOOae8w-vBEA3e3jylQEaRchbwQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+            "image": "coffe-img.svg",
             "amount":5
         }
     ]
