@@ -1,6 +1,7 @@
 import { ThemeProvider } from 'styled-components'
 
 import { Header } from './components/Navbar'
+import { Home } from './pages/Home'
 import { Banner } from './pages/Home/components/Banner'
 import { CoffeeList } from './pages/Home/components/CoffeeList'
 
@@ -12,8 +13,7 @@ export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <Header />
-      <Banner />
-      <CoffeeList />
+      <Home />
       <GlobalStyles />
     </ThemeProvider>
   )

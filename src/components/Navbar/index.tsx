@@ -2,7 +2,7 @@ import { MapPin, ShoppingCart, SunDim } from 'phosphor-react'
 
 import { ActionsContainer, HeaderContainer, ActionsContentLocation, BasicActionsButton } from "./styles";
 
-import logoCoffee from '../../../public/logo-coffee-delivery.svg'
+import logoCoffee from '../../assets/logo-coffee-delivery.svg'
 
 export function Header() {
     return (

@@ -5,7 +5,7 @@ import { api } from "../../../../services/api"
 import { BasicActionsButton } from "../../../../components/Navbar/styles"
 import { ActionsContentCart, CoffeeListContainer, CoffeeListContent } from "./styles"
 
-import imgReplace from '../../../../../public/coffe-img.svg'
+import imgReplace from '../../../../assets/coffe-img.svg'
 
 interface Coffee {
     id: number
