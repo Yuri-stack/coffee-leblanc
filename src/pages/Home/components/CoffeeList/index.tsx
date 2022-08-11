@@ -1,47 +1,19 @@
-import { useEffect, useState } from "react"
 import { Minus, Plus, ShoppingCart } from "phosphor-react"
-import { api } from "../../../../services/api"
 
 import { BasicActionsButton } from "../../../../components/Navbar/styles"
 import { ActionsContentCart, CoffeeListContainer, CoffeeListContent } from "./styles"
 
-import imgReplace from '../../../../assets/coffe-img.svg'
-
-interface Coffee {
-    id: number
-    name: string
-    description: string
-    tags: Array<string>
-    price: string
-    image: string
-    amount: number
-}
+import { dataProducts } from '../../../../mock/products-data'
 
 export function CoffeeList() {
-    const [list, setList] = useState<Coffee[]>([])
-
-    useEffect(() => {
-        async function loadProducts() {
-            const response = await api.get<Coffee[]>('products')
-            setList(response.data)
-        }
-
-        loadProducts()
-    }, [])
-
     return (
         <CoffeeListContainer>
             <h1>Nossos Cafés</h1>
 
             <CoffeeListContent>
-                {list.map(item => (
+                {dataProducts.map(item => (
                     <li key={item.id}>
-                        { 
-                            item.image ? 
-                                <img src={item.image} alt={item.name} /> 
-                            : 
-                                <img src={imgReplace} alt="Imagem de uma xícara de café" />
-                        }
+                        <img src={item.image} alt={item.name} /> 
                         <div>
                             {item.tags.map(tag => (
                                 <span key={tag}>{tag}</span>
