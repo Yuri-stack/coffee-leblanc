@@ -1,4 +1,5 @@
-import { CheckoutContainer, CoffeCardContainer } from "./styles";
+import { Bank, CreditCard, CurrencyDollar, MapPin, Money } from "phosphor-react";
+import { ButtonCardContainer, CheckoutContainer, CoffeCardContainer, CoffeCardContent, FormContainer, InputForm } from "./styles";
 
 export function Checkout() {
   return (
@@ -6,49 +7,71 @@ export function Checkout() {
       <section>
         <strong>Complete seu Pedido</strong>
 
-        <div style={{ backgroundColor: '#ccc', padding: '1.5rem', color: '#000' }}>
-          <div style={{ border: '1px solid #000' }}>
-            <div>
-              <p>Endereço de Entrega</p>
-              <p>Informe o endereço onde deseja receber seu pedido</p>
-            </div>
-            <form style={{ display: 'flex', flexDirection: 'column' }}>
-              <input type="text" placeholder="CEP" />
-              <input type="text" placeholder="Rua" />
-              <input type="number" placeholder="Número" />
-              <input type="text" placeholder="Complemento" />
-              <input type="text" placeholder="Bairro" />
-              <input type="text" placeholder="Cidade" />
-              <input type="text" placeholder="UF" />
-            </form>
-          </div>
-        </div>
+        <CoffeCardContainer>
+            <CoffeCardContent>
+              <MapPin size={22} />
+              <div>
+                <strong>Endereço de Entrega</strong>
+                <p>Informe o endereço onde deseja receber seu pedido</p>
+              </div>
+            </CoffeCardContent>
 
-        <div style={{ backgroundColor: '#ccc', padding: '1.5rem', marginTop: '1rem' }}>
-          <div style={{ border: '1px solid #000' }}>
-            <div>
-              <p>Pagamento</p>
-              <p>O pagamento é feito na entrega. Escolha a forma que deseja pagar</p>
-            </div>
+            <FormContainer>
+              <InputForm placeholder="CEP" required/>
+              <InputForm placeholder="Rua" largura="100%" required/>
 
-            <div>
-              <button>Cartão de Crédito</button>
-              <button>Cartão de Dédito</button>
-              <button>Dinheiro</button>
-            </div>
-          </div>
-        </div>
+              <div>
+                <InputForm type="number" placeholder="Número" largura="200px" required/>
+                <InputForm placeholder="Complemento" largura="100%" required/>
+              </div>
+
+              <div>
+                <InputForm placeholder="Bairro" required/>
+                <InputForm placeholder="Cidade" largura="100%" required/>
+                <InputForm placeholder="UF" largura="60px" required/>
+              </div>
+            </FormContainer>
+        </CoffeCardContainer>
+
+        <CoffeCardContainer>
+            <CoffeCardContent>
+              <CurrencyDollar size={22} />
+              <div>
+                <strong>Pagamento</strong>
+                <p>O pagamento é feito na entrega. Escolha a forma que deseja pagar</p>
+              </div>
+            </CoffeCardContent>
+
+            <ButtonCardContainer>
+              <button>
+                <CreditCard size={22} color="red"/>
+                Cartão de Crédito
+              </button>
+              <button>
+                <Bank size={22} color="red" />
+                Cartão de Dédito
+              </button>
+              <button>
+                <Money size={22} color="red" />
+                Dinheiro
+              </button>
+            </ButtonCardContainer>
+
+        </CoffeCardContainer>
       </section>
 
       <section>
         <strong>Café(s) Selecionado(s)</strong>
 
-        <div style={{ backgroundColor: '#ccc', padding: '1.5rem', color: '#000' }}>
-          <div style={{ border: '1px solid #000' }}>
-            <div>
-              <p>Endereço de Entrega</p>
-              <p>Informe o endereço onde deseja receber seu pedido</p>
-            </div>
+        <CoffeCardContainer>
+            <CoffeCardContent>
+              <MapPin size={22} />
+              <div>
+                <strong>Endereço de Entrega</strong>
+                <p>Informe o endereço onde deseja receber seu pedido</p>
+              </div>
+            </CoffeCardContent>
+
             <form style={{ display: 'flex', flexDirection: 'column' }}>
               <input type="text" placeholder="CEP" />
               <input type="text" placeholder="Rua" />
@@ -58,9 +81,10 @@ export function Checkout() {
               <input type="text" placeholder="Cidade" />
               <input type="text" placeholder="UF" />
             </form>
-          </div>
-        </div>
+
+        </CoffeCardContainer>
       </section>
+
     </CheckoutContainer>
   )
 }
