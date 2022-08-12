@@ -54,7 +54,7 @@ export const CoffeeListContent = styled.ul`
         strong {
             font: 700 1.5rem/1.6 'Baloo 2', cursive;
             color: ${props => props.theme['yellow-dark']};
-            text-align: center;
+            text-align: center;            
         }
 
         p{
@@ -66,6 +66,10 @@ export const CoffeeListContent = styled.ul`
             display: flex;
             align-items: center;
             gap: .5rem;
+
+            strong{
+                margin-right: 3.5rem;
+            }
 
             /* div:nth-child(3){
                 display: flex;
@@ -89,8 +93,6 @@ export const ActionsContentCart = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin-left: 3.5rem;
 
     border-radius: 5px;
     /* border: 1px solid ${props => props.theme['yellow-light']}; */

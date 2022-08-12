@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-interface InputProps{
+interface InputProps {
     placeholder: string
     largura?: string
 }
 
 export const CheckoutContainer = styled.section`
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
 
     padding: 0 10rem;
@@ -22,6 +22,11 @@ export const CoffeCardContainer = styled.section`
     p{
         font: 400 1rem/1.6 'Roboto', sans-serif;
         color: ${props => props.theme["base-text"]};
+    }
+
+    hr{
+        border-color: ${props => props.theme["yellow-dark"]};
+        margin: 1rem 0;
     }
 `
 
@@ -57,6 +62,7 @@ export const InputForm = styled.input<InputProps>`
 export const ButtonCardContainer = styled.div`
     display: flex;
     justify-content: space-between;
+    gap: .5rem;
 
     button{
         display: flex;
@@ -71,5 +77,61 @@ export const ButtonCardContainer = styled.div`
 
         border: 1px solid transparent;
         border-radius: 6px;
+    }
+
+    a{
+        display: flex;
+        justify-content: center;
+        gap: .5rem;
+
+        width: 11rem;
+        padding: .75rem;
+
+        font: 400 1rem/1.6 'Roboto', sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: ${props => props.theme["base-text"]};
+
+        border: 1px solid white;
+        border-radius: 6px;
+    }
+`
+
+export const CoffeCardSelected = styled.article`
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem; 
+
+    img{
+        width: 5rem;
+    }
+`
+
+export const CoffeCardSelectedInfo = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 12rem;
+
+    strong{
+        text-align: center;
+    }
+`
+
+export const CoffeeCheckout = styled.div`
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin: 1rem 0;
+
+    div{
+        p{
+            text-align: right;
+            margin: 0 0 .25rem;
+        }
     }
 `
