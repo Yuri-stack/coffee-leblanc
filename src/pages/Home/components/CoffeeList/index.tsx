@@ -28,7 +28,6 @@ export function CoffeeList() {
                             <ActionsContentCart>
                                 <button type="button"
                                     data-coffeeaction="increment-coffee"
-                                    disabled={item.amount <= 1}
                                 >
                                     <Plus size={22} weight="bold" />
                                 </button>
@@ -42,6 +41,7 @@ export function CoffeeList() {
 
                                 <button type="button"
                                     data-coffeeaction="decrement-coffee"
+                                    disabled={item.amount <= 1}
                                 >
                                     <Minus size={22} weight="bold" />
                                 </button>

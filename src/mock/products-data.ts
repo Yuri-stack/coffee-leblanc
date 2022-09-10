@@ -13,7 +13,7 @@ export const dataProducts = [
         "tags": ["Tradicional"],
         "price": 9.90,
         "image": coffeExpresso,
-        "amount":5
+        "amount":1
     },
     {
         "id": 2,
@@ -22,7 +22,7 @@ export const dataProducts = [
         "tags": ["Tradicional", "Gelado"],
         "price": 9.90,
         "image": coffeGelado,
-        "amount":5
+        "amount":1
     },
     {
         "id": 3,
@@ -31,7 +31,7 @@ export const dataProducts = [
         "tags": ["Especial", "Com Leite"],
         "price": 9.90,
         "image": coffeChocoQuente,
-        "amount":5
+        "amount":1
     },
     {
         "id": 4,
@@ -40,16 +40,16 @@ export const dataProducts = [
         "tags": ["Tradicional", "Com Leite"],
         "price": 9.90,
         "image": coffeCapuccino,
-        "amount":5
+        "amount":1
     },
     {
-        "id": 5,
+        "id": 1,
         "name": "Cubano",
         "description": "Drink gelado de café expresso com rum, creme de leite e hortelã",
         "tags": ["Especial", "Alcoólico", "Gelado"],
         "price": 9.90,
         "image": coffeCubano,
-        "amount":5
+        "amount":1
     },
     {
         "id": 6,
@@ -58,6 +58,6 @@ export const dataProducts = [
         "tags": ["Especial"],
         "price": 9.90,
         "image": coffeHavaino,
-        "amount":5
+        "amount":1
     }
 ]
