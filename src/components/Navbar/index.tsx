@@ -4,7 +4,7 @@ import { ActionsContainer, HeaderContainer, ActionsContentLocation, BasicActions
 
 import logoCoffee from '../../assets/logo-coffee-delivery.svg'
 
-export function Header() {
+export function Header2() {
     return (
         <HeaderContainer>
             <img src={logoCoffee} alt="" />

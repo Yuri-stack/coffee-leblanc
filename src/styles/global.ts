@@ -18,7 +18,7 @@ export const GlobalStyles = createGlobalStyle`
         color: ${props => props.theme["base-text"]};
     }
 
-    header{
+    /* header{
         font: 700 1.125rem/1.6 'Baloo 2', cursive;
-    }
+    } */
 `
