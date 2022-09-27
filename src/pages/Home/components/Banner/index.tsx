@@ -1,49 +1,38 @@
 import { Coffee, Package, ShoppingCart, Timer } from "phosphor-react";
-import { BannerContainer, BannerContent, InfoContainer, InfoItem, TitleContainer } from "./styles";
+import { BannerContainer, BannerContent, InfoContainer, TitleContainer } from "./styles";
+import InfoItem from "../InfoItem/InfoItem";
 
 import imagemCoffee from '../../../../assets/imagem-coffee.svg'
 
 export function Banner() {
-  return (
-    <BannerContainer>
-        <BannerContent>
-            <TitleContainer>
-                <h1>Encontre o café perfeito para qualquer hora do dia</h1>
-                <p>Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora.</p>
-            </TitleContainer>
-            
-            <InfoContainer>
-                <InfoItem>
-                    <div>
-                        <ShoppingCart size={22} weight="fill"/>
-                    </div>
-                    <p>Compra Simples e Segura.</p>
-                </InfoItem>
+    return (
+        <BannerContainer>
+            <BannerContent>
+                <TitleContainer>
+                    <h1>Encontre o café perfeito para qualquer hora do dia</h1>
+                    <p>Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora.</p>
+                </TitleContainer>
 
-                <InfoItem>
-                    <div>
-                        <Timer size={22} weight="fill"/>
-                    </div>
-                    <p>Entrega rápida e rastreada.</p>
-                </InfoItem>
+                <InfoContainer>
+                    <InfoItem
+                        title="Compra Simples e Segura."
+                        icon={ShoppingCart} />
 
-                <InfoItem>
-                    <div>
-                        <Package size={22} weight="fill"/>
-                    </div>
-                    <p>Embalagem mantém o café intacto.</p>
-                </InfoItem>
+                    <InfoItem
+                        title="Entrega rápida e rastreada."
+                        icon={Timer} />
 
-                <InfoItem>
-                    <div>
-                        <Coffee size={22} weight="fill"/>
-                    </div>
-                    <p>O café chega fresquinho até você.</p>
-                </InfoItem>
-            </InfoContainer>
-        </BannerContent>
+                    <InfoItem
+                        title="Embalagem mantém o café intacto."
+                        icon={Package} />
 
-        <img src={imagemCoffee} alt="Imagem de um copo papelão com café" />
-    </BannerContainer>
-  )
+                    <InfoItem
+                        title="O café chega fresquinho até você."
+                        icon={Coffee} />
+                </InfoContainer>
+            </BannerContent>
+
+            <img src={imagemCoffee} alt="Imagem de um copo de café e alguns grãos ao redor" />
+        </BannerContainer>
+    )
 }

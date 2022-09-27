@@ -35,27 +35,3 @@ export const InfoContainer = styled.section`
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 `
-
-export const InfoItem = styled.div`
-    display: flex;
-    align-items: center;
-
-    width: 20rem;
-    gap: 1rem;
-
-    p{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
-    }
-
-    div{
-        display: flex;
-        align-items: center;
-
-        padding: .5rem;
-        border-radius: 50%;
-        background: ${props => props.theme["yellow-dark"]};
-    }
-`
-

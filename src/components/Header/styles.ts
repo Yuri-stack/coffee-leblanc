@@ -26,7 +26,7 @@ export const HeaderContainer = styled.header`
     margin: 0 auto;
 `
 
-export const Wrapper = styled.div`
+export const HeaderContent = styled.div`
     display: flex;
     align-items: center;
 
