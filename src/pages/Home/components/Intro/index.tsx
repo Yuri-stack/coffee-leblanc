@@ -1,7 +1,7 @@
 import { BenefitsContainer, IntroContainer, IntroContent, IntroTitle } from "./styles";
 import imagemCoffee from '../../../../assets/imagem-coffee.svg'
 import { RegularText } from "../../../../components/Typography";
-import { InfoWithIcon } from "../../../../components/InfoWithIcon";
+import { InfoWithIcon } from "../../../../components/InfoWithIcon/InfoWithIcon";
 import { ShoppingCart, Timer, Package, Coffee } from "phosphor-react";
 import { useTheme } from "styled-components";
 
