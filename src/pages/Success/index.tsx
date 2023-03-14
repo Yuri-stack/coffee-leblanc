@@ -4,9 +4,28 @@ import { InfoWithIcon } from "../../components/InfoWithIcon/InfoWithIcon";
 import { RegularText, TitleText } from "../../components/Typography";
 import { DetailsContainer, SuccessContainer } from "./styles";
 import deliveryMan from '../../assets/delivery.svg'
+import { useLocation, useNavigate } from "react-router-dom";
+import { OrderData } from "../Checkout";
+import { useEffect } from "react";
+import { paymentMethods } from "../Checkout/components/PaymentOptions/PaymentOptions";
+
+interface LocationType {
+    state: OrderData;
+}
 
 export function Success() {
     const { colors } = useTheme();
+    const { state } = useLocation() as unknown as LocationType;
+
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (!state) {
+            navigate("/");
+        }
+    }, []);
+
+    if (!state) return <></>;
 
     return (
         <SuccessContainer className="container">
@@ -24,9 +43,9 @@ export function Success() {
                         iconBg={colors["brand-purple"]}
                         text={
                             <RegularText>
-                                {/* Entrega em <strong>{state.street}</strong>, {state.number}
-                <br />
-                {state.district} - {state.city}, {state.uf} */}
+                                Entrega em <strong>{state.street}</strong>, {state.number}
+                                <br />
+                                {state.district} - {state.city}, {state.uf}
                             </RegularText>
                         }
                     />
@@ -50,7 +69,7 @@ export function Success() {
                             <RegularText>
                                 Pagamento na entrega
                                 <br />
-                                {/* <strong>{paymentMethods[state.paymentMethod].label}</strong> */}
+                                <strong>{paymentMethods[state.paymentMethod].label}</strong>
                             </RegularText>
                         }
                     />

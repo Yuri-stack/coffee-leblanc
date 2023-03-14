@@ -1,19 +1,23 @@
 import { TitleText } from "../../../../components/Typography";
+import { useCart } from "../../../../hooks/useCart";
 import { CoffeeCartCard } from "../CoffeeCartCard/CoffeeCartCard";
 import { ConfirmationSection } from "../ConfirmationSection/ConfirmationSection";
 import { DetailsContainer, SelectedCoffeesContainer } from "./styles";
 
 export function SelectedCoffees() {
-  return (
-    <SelectedCoffeesContainer>
-        <TitleText size="xs" color="subtitle">Cafés Selecionados</TitleText>
-        <DetailsContainer>
-            <CoffeeCartCard />
-            <CoffeeCartCard />
-            <CoffeeCartCard />
+    const { cartItems } = useCart()
 
-            <ConfirmationSection />
-        </DetailsContainer>
-    </SelectedCoffeesContainer>
-  )
+    return (
+        <SelectedCoffeesContainer>
+            <TitleText size="xs" color="subtitle">Cafés Selecionados</TitleText>
+            
+            <DetailsContainer>
+                { cartItems.map(item => (
+                    <CoffeeCartCard key={item.id} coffee={item} />
+                ))}
+
+                <ConfirmationSection />
+            </DetailsContainer>
+        </SelectedCoffeesContainer>
+    )
 }
