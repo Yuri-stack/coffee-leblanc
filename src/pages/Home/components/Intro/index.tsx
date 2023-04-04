@@ -1,5 +1,6 @@
 import { BenefitsContainer, IntroContainer, IntroContent, IntroTitle } from "./styles";
-import imagemCoffee from '../../../../assets/imagem-coffee.svg'
+// import imagemCoffee from '../../../../assets/imagem-coffee.svg'
+import logoPhantom from '../../../../assets/logo.webp'
 import { RegularText } from "../../../../components/Typography";
 import { InfoWithIcon } from "../../../../components/InfoWithIcon/InfoWithIcon";
 import { ShoppingCart, Timer, Package, Coffee } from "phosphor-react";
@@ -45,7 +46,8 @@ export function Intro() {
           </BenefitsContainer>
         </div>
 
-        <img src={imagemCoffee} alt="" />
+        {/* <img src={logoPhantom} alt="" width="512" height="360"/> */}
+        <img src={logoPhantom} alt="" width="484" height="316"/>
       </IntroContent>
     </IntroContainer>
   )

@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components";
+// import wallpaper from './../assets/wallpaper.webp'
+import wallpaper from './../assets/wallpaper-city.jpg'
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -9,8 +11,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    /* background: ${props => props.theme.colors["base-background"]}; */
-    background: ${({ theme }) => theme.colors["base-background"]};
+    background: ${props => props.theme.colors["base-background"]};
+    background-image: url(${wallpaper});
+    background-size: 100%;
     color: ${({ theme }) => theme.colors["base-text"]};
     -webkit-font-smoothing: antialiased;
   }
